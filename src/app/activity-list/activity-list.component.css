@@ -28,7 +28,8 @@ hr{
 
 .heading{
   font-family: 'Fjalla One', sans-serif;
-  margin-top: 10px
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .totals{
