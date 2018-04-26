@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IActivity } from '../shared/activity.model';
-import { SAVED_ACTIVITIES }  from '../shared/activities';
+import { SAVED_ACTIVITIES } from '../shared/activities';
 
 @Injectable()
 export class ActivityService {
@@ -17,7 +17,7 @@ export class ActivityService {
 
   getTotalDistance(allActivities: IActivity[]){
     var totalDistance = 0;
-    for(var i = 0; i < allActivities.length; i++){
+    for(let i = 0; i < allActivities.length; i++){
       totalDistance += allActivities[i].distance;
     }
     return totalDistance;
@@ -25,7 +25,7 @@ export class ActivityService {
 
   getFirstDate(allActivities: IActivity[]){
     var earliestDate = new Date("01/01/9999");
-    for(var i = 0; i < allActivities.length; i++){
+    for(let i = 0; i < allActivities.length; i++){
       var currentDate = allActivities[i].date;
       if(currentDate < earliestDate){
         earliestDate = currentDate;

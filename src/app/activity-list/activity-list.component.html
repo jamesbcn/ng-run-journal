@@ -7,7 +7,7 @@
     total miles over
     <p class="totals">{{ totalActivities }}</p>
     runs since
-    <p class="totals">{{ firstDate | date: 'longDate'}}</p>
+    <p class="totals">{{ firstDate | date:'longDate' }}</p>
   </div>
   <hr />
   <table class="table table-hover">
@@ -27,7 +27,7 @@
           </a>
         </td>
         <td>{{ activity.comments }}</td>
-        <td>{{ activity.date | date:"yyyy-MM-dd"}}</td>
+        <td>{{ activity.date | date: 'dd/MM/yyy'}}</td>
         <td>{{ activity.distance }}</td>
       </tr>
     </tbody>
