@@ -29,7 +29,6 @@
     "leaflet": "^1.0.3",
     "leaflet-omnivore": "^0.3.4",
     "mapbox": "^1.0.0-beta7",
-    "rxjs": "^6.0.0",
     "typescript": "~2.8.3",
     "zone.js": "^0.8.4"
   },
